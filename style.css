@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-blend-mode:normal;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+p{
+    color: white;
+}
+
+.main-container{
+    margin-top: 23rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+}
+
+.f-container{
+    background-color: hsl(228, 56%, 26%);
+    width: 20rem;
+    padding: 2rem 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 6rem;
+    border-top-left-radius: 1rem;
+    margin-right: 2rem;
+}
+
+.icons{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons img{
+    background-color: hsl(229, 57%, 11%);
+    width: 2.5rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.icons img:nth-child(2){
+    padding: 0.78rem 0.6rem;
+}
+.icons img:nth-child(3){
+    padding: 0.88rem 0.6rem;
+}
+
+.s-container{
+    background-color: hsl(228, 56%, 26%);
+    padding: 2.5rem 2.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.storage-container{
+   background-color: hsl(229, 57%, 11%);
+   height: 1.2rem;
+   width: 27rem;
+   border-radius: 2rem;
+   padding-top: 0.15rem;
+   padding-left: 0.15rem;
+   margin-top: 1rem;
+   margin-bottom: 0.5rem;
+}
+
+.used-storage{
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 0.9rem;
+    width: 20rem;
+    border-radius: 2rem;
+    padding-left: 19.1rem;
+    
+}
+
+.circle{
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#max-storage{
+    float: right;
+}
+
+.storage-info{
+    background-color: white;
+    position: absolute;
+    border-radius: 8px;
+    margin-left: 42rem;
+    margin-bottom: 8.5rem;
+}
+
+.storage-info p{
+    color: hsla(229, 57%, 11%, 0.267);
+    padding: 9px 14px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.storage-info b{
+    font-size: 21px;
+    color: hsl(229, 57%, 11%);
+    padding-right: 7px;
+}
+
+@media (max-width:900px){
+    html{
+        font-size: 10.5px;   
+    }
+
+    body{
+        background-image: url(./images/bg-mobile.png);
+        background-size: cover;
+    }
+
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .f-container{
+        width: 32rem;
+        margin-right: 0;
+    }
+
+    .storage-info{
+        margin: 0;
+        margin-top: 25rem;
+    }
+
+    .storage-info b{
+        font-size: 25px;
+    }
+    .storage-info p{
+        font-size: 12px;
+    }
+}
